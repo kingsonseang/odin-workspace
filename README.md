@@ -12,6 +12,33 @@ The authoritative statement of a task is the one on **Mercor Studio** (project O
 The material in the folders is the offline copy of it. If the two differ, the task on
 Mercor Studio wins.
 
+## Getting the workspace
+
+The workspace is one git repository, and two of the task folders are submodules of it:
+`traige-ci` and `git-feat-branch` are git repositories of their own, because their
+prepared history is part of the task. Clone them with their submodules, or those two
+folders stay empty:
+
+```bash
+git clone --recurse-submodules git@github.com:kingsonseang/odin-workspace.git
+```
+
+The repository is private. A clone that was made without `--recurse-submodules` is
+completed with:
+
+```bash
+git submodule update --init --recursive
+```
+
+Both submodules are pinned to a fixed commit, so a fresh clone starts in a detached
+HEAD state. The branches of the two fixtures are fetched with it and are checked out
+like this:
+
+```bash
+git -C git-feat-branch checkout main     # or: feature/task-priority-filters
+git -C traige-ci checkout main
+```
+
 ## Layout
 
 ```
@@ -98,7 +125,8 @@ verification is made in the browser and how the template is filled in.
 
 * `traige-ci` and `git-feat-branch` are git repositories with a prepared history
   (a failing build, divergent branches with a real conflict). The other fixtures are
-  plain directories.
+  plain directories. The two are submodules of this repository, which is why the clone
+  needs `--recurse-submodules`.
 * `doc-for-dev` (Forgeboard, a monorepo with an API and a web app) and
   `test-plan-defect-regression` (Tasklane, a Vite app) are two different
   applications of the same kind, a project and task board, with two different
