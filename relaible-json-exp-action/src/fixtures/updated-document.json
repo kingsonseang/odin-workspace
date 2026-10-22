@@ -1,0 +1,74 @@
+{
+  "workspace": {
+    "id": "wk_field_notes",
+    "name": "Field Notes",
+    "revision": 2,
+    "archived": true,
+    "description": "Updated immediately before export",
+    "tags": ["research", "nested", "json", "updated"],
+    "emptyList": [],
+    "emptyObject": {},
+    "members": [
+      {
+        "id": "user_ada",
+        "name": "Ada Lovelace",
+        "roles": ["owner", "editor", "exporter"],
+        "profile": {
+          "timezone": "Europe/London",
+          "bio": "Wrote the first algorithm.",
+          "links": []
+        }
+      },
+      {
+        "id": "user_grace",
+        "name": "Grace Hopper",
+        "roles": ["viewer"],
+        "profile": {
+          "timezone": "America/New_York",
+          "bio": "",
+          "links": [{ "label": "notes", "url": null }]
+        }
+      }
+    ],
+    "settings": {
+      "notifications": {
+        "email": false,
+        "digest": "weekly",
+        "channels": ["email", "in-app"]
+      },
+      "limits": {
+        "projects": 8,
+        "storageMb": 0
+      }
+    },
+    "activity": [
+      {
+        "id": 1,
+        "type": "created",
+        "payload": {
+          "source": "fixture",
+          "note": ""
+        }
+      },
+      {
+        "id": 2,
+        "type": "renamed",
+        "payload": null
+      },
+      {
+        "id": 3,
+        "type": "exported",
+        "payload": {
+          "source": "in-app-update",
+          "note": "",
+          "artifacts": []
+        }
+      }
+    ]
+  },
+  "meta": {
+    "schemaVersion": 2,
+    "generatedBy": "fixture-updated",
+    "extensions": {}
+  }
+}

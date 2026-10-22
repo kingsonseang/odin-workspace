@@ -1,0 +1,38 @@
+{
+  "document": {
+    "title": "Orbit Tracker",
+    "revision": 1,
+    "published": false,
+    "summary": null,
+    "tags": ["demo", "nested", "json"],
+    "emptyList": [],
+    "emptyObject": {},
+    "owner": {
+      "name": "Ada Lovelace",
+      "email": null,
+      "preferences": {
+        "digest": true,
+        "labels": []
+      }
+    },
+    "events": [
+      {
+        "id": 1,
+        "kind": "created",
+        "payload": {
+          "source": "fixture",
+          "note": ""
+        }
+      },
+      {
+        "id": 2,
+        "kind": "updated",
+        "payload": null
+      }
+    ],
+    "metrics": {
+      "views": 0,
+      "downloads": 0
+    }
+  }
+}

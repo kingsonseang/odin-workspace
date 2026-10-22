@@ -1,0 +1,51 @@
+{
+  "generatedBy": "scripts/generate-fixtures.ts",
+  "display": {
+    "width": 90,
+    "height": 60,
+    "quadrants": {
+      "topLeft": {
+        "red": 220,
+        "green": 32,
+        "blue": 40
+      },
+      "topRight": {
+        "red": 32,
+        "green": 160,
+        "blue": 76
+      },
+      "bottomLeft": {
+        "red": 32,
+        "green": 84,
+        "blue": 220
+      },
+      "bottomRight": {
+        "red": 244,
+        "green": 196,
+        "blue": 32
+      }
+    }
+  },
+  "fixtures": [
+    {
+      "fileName": "orientation-1-normal.jpg",
+      "orientation": 1,
+      "description": "Normal orientation; stored pixels already match the intended display."
+    },
+    {
+      "fileName": "orientation-2-mirrored.jpg",
+      "orientation": 2,
+      "description": "Mirrored horizontally; EXIF orientation 2 mirrors the stored pixels for display."
+    },
+    {
+      "fileName": "orientation-6-rotate-90-cw.jpg",
+      "orientation": 6,
+      "description": "Stored rotated counter-clockwise; EXIF orientation 6 rotates 90 degrees clockwise for display."
+    },
+    {
+      "fileName": "orientation-8-rotate-270-cw.jpg",
+      "orientation": 8,
+      "description": "Stored rotated clockwise; EXIF orientation 8 rotates 270 degrees clockwise for display."
+    }
+  ]
+}

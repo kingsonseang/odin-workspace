@@ -1,0 +1,5 @@
+record_id,display_name,start_date,amount
+SYN-4001,Junco Field,2026-08-01,10.00
+SYN-4002,Kepler Gate,2026-08-02
+SYN-4003,Kestrel Point,2026-08-03,30.00,unexpected-extra-field
+SYN-4005,Lumen Yard,2026-08-05,50.00

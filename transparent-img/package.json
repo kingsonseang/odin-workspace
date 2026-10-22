@@ -1,0 +1,26 @@
+{
+  "name": "transparent-img",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Intentionally seeded bug exercise: convert PNG, JPEG, and WebP images with Sharp.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "convert": "tsx src/convert.ts",
+    "fixtures": "tsx scripts/generate-fixtures.ts",
+    "pretest": "npm run fixtures",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

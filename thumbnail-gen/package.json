@@ -1,0 +1,25 @@
+{
+  "name": "thumbnail-gen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A strict TypeScript thumbnail generator with center and focal-point cropping.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test tests/crop.test.ts tests/thumbnail.test.ts",
+    "thumbnail": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

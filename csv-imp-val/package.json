@@ -1,0 +1,23 @@
+{
+  "name": "csv-import-validator-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Intentionally incomplete CSV import-validation exercise for a TypeScript engineer.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test --test-reporter=spec test/csv-validator.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "csv-parse": "7.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

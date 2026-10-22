@@ -1,0 +1,33 @@
+{
+  "name": "markdown-link-export",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Strict TypeScript Markdown-to-HTML exporter with an explicit link-resolution policy.",
+  "type": "module",
+  "main": "./dist/src/export.js",
+  "types": "./dist/src/export.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/export.d.ts",
+      "import": "./dist/src/export.js"
+    }
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test dist/tests/export.test.js",
+    "export": "npm run build && node dist/src/cli.js",
+    "export:sample": "npm run build && node dist/src/cli.js examples/docs preview/site",
+    "preview": "npm run build && node dist/scripts/preview.js"
+  },
+  "dependencies": {
+    "marked": "18.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "5.9.3"
+  }
+}

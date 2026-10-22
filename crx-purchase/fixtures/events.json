@@ -1,0 +1,47 @@
+[
+  {
+    "id": "evt_fauxpay_0001",
+    "provider": "fauxpay",
+    "type": "payment.succeeded",
+    "createdAt": "2026-09-10T09:15:00.000Z",
+    "data": {
+      "paymentId": "pay_fauxpay_1001",
+      "amountCents": 2500,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_fauxpay_0002",
+    "provider": "fauxpay",
+    "type": "payment.succeeded",
+    "createdAt": "2026-09-10T09:16:00.000Z",
+    "data": {
+      "paymentId": "pay_fauxpay_1002",
+      "amountCents": 800,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_fauxpay_0003",
+    "provider": "fauxpay",
+    "type": "payment.succeeded",
+    "createdAt": "2026-09-10T09:17:00.000Z",
+    "data": {
+      "paymentId": "pay_fauxpay_1003",
+      "amountCents": 1250,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_fauxpay_0004",
+    "provider": "fauxpay",
+    "type": "payment.failed",
+    "createdAt": "2026-09-10T09:18:00.000Z",
+    "data": {
+      "paymentId": "pay_fauxpay_1004",
+      "amountCents": 4200,
+      "currency": "USD",
+      "failureCode": "card_declined"
+    }
+  }
+]

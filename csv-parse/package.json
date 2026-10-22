@@ -1,0 +1,20 @@
+{
+  "name": "strict-csv-import",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A strict TypeScript CSV importer starter with an intentional quoted-field parsing defect.",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test dist/tests/parser.test.js dist/tests/validator.test.js dist/tests/importer.test.js",
+    "import": "npm run build && node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.0",
+    "typescript": "^5.6.0"
+  }
+}

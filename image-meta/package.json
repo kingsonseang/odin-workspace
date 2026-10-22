@@ -1,0 +1,37 @@
+{
+  "name": "image-meta-thumbnail-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Strict TypeScript thumbnail generator with intentionally incorrect EXIF orientation handling.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "main": "./dist/thumbnail.js",
+  "types": "./dist/thumbnail.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/thumbnail.d.ts",
+      "import": "./dist/thumbnail.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "fixtures": "tsx scripts/generate-fixtures.ts",
+    "pretest": "npm run typecheck && npm run fixtures",
+    "test": "node --import tsx --test tests/orientation.test.ts tests/metadata.test.ts"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "exif-reader": "2.0.3",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

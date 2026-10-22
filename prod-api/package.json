@@ -1,0 +1,28 @@
+{
+  "name": "prod-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small TypeScript records API used for a production-readiness engineering exercise.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "tsx --test test/*.test.ts",
+    "test:watch": "tsx --test --watch test/*.test.ts",
+    "typecheck": "tsc --project tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.5",
+    "dotenv": "^18.0.8",
+    "hono": "^4.13.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

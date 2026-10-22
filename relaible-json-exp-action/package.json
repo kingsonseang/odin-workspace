@@ -1,0 +1,39 @@
+{
+  "name": "reliable-json-export-action",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:browser": "playwright test --project=firefox",
+    "test:browser:headed": "playwright test --project=firefox --headed",
+    "browsers:install": "playwright install firefox"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.50.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.10.7",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^25.0.1",
+    "typescript": "~5.7.3",
+    "vite": "^5.4.14",
+    "vitest": "^2.1.8"
+  }
+}

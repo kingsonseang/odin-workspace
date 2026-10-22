@@ -1,0 +1,31 @@
+{
+  "name": "batch-img",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Batch image resizing exercise built with Node.js, TypeScript, and Sharp",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "tsx src/cli.ts",
+    "resize": "tsx src/cli.ts resize",
+    "batch": "tsx src/cli.ts batch",
+    "fixtures:generate": "tsx scripts/generate-fixtures.ts",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/processor.test.ts",
+    "test:acceptance": "vitest run tests/batch.acceptance.test.ts",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "sharp": "0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.9",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vitest": "2.1.9"
+  }
+}

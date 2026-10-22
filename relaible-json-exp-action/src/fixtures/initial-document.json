@@ -1,0 +1,61 @@
+{
+  "workspace": {
+    "id": "wk_field_notes",
+    "name": "Field Notes",
+    "revision": 1,
+    "archived": false,
+    "description": null,
+    "tags": ["research", "nested", "json"],
+    "emptyList": [],
+    "emptyObject": {},
+    "members": [
+      {
+        "id": "user_ada",
+        "name": "Ada Lovelace",
+        "roles": ["owner", "editor"],
+        "profile": {
+          "timezone": "Europe/London",
+          "bio": "",
+          "links": []
+        }
+      },
+      {
+        "id": "user_grace",
+        "name": "Grace Hopper",
+        "roles": [],
+        "profile": null
+      }
+    ],
+    "settings": {
+      "notifications": {
+        "email": true,
+        "digest": "daily",
+        "channels": []
+      },
+      "limits": {
+        "projects": 5,
+        "storageMb": 0
+      }
+    },
+    "activity": [
+      {
+        "id": 1,
+        "type": "created",
+        "payload": {
+          "source": "fixture",
+          "note": ""
+        }
+      },
+      {
+        "id": 2,
+        "type": "renamed",
+        "payload": null
+      }
+    ]
+  },
+  "meta": {
+    "schemaVersion": 1,
+    "generatedBy": "fixture",
+    "extensions": {}
+  }
+}

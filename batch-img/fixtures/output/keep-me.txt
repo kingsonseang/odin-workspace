@@ -1,0 +1,1 @@
+Pre-existing non-image output sentinel. It must remain byte-for-byte unchanged.

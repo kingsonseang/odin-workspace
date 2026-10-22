@@ -1,0 +1,5 @@
+{
+  "serviceName": "billing-api",
+  "port": 8080,
+  "environment": "qa"
+}

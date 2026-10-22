@@ -1,0 +1,247 @@
+{
+  "name": "small",
+  "primary": [
+    {
+      "id": "txn-0001",
+      "referenceKey": "acct-100",
+      "amountCents": 12500,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "txn-0002",
+      "referenceKey": "acct-200",
+      "amountCents": 8750,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T00:17:00.000Z"
+    },
+    {
+      "id": "txn-0003",
+      "referenceKey": "orphan-001",
+      "amountCents": 2100,
+      "currency": "GBP",
+      "occurredAt": "2026-01-01T00:31:00.000Z"
+    },
+    {
+      "id": "txn-0001",
+      "referenceKey": "acct-300",
+      "amountCents": 44000,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T00:44:00.000Z"
+    },
+    {
+      "id": "txn-0005",
+      "referenceKey": "acct-400",
+      "amountCents": 1999,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T00:59:00.000Z"
+    },
+    {
+      "id": "txn-0006",
+      "referenceKey": "acct-999",
+      "amountCents": 3450,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T01:13:00.000Z"
+    },
+    {
+      "id": "txn-0007",
+      "referenceKey": "acct-100",
+      "amountCents": 7200,
+      "currency": "GBP",
+      "occurredAt": "2026-01-01T01:31:00.000Z"
+    },
+    {
+      "id": "txn-0008",
+      "referenceKey": "acct-500",
+      "amountCents": 18000,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T01:48:00.000Z"
+    },
+    {
+      "id": "txn-0009",
+      "referenceKey": "acct-600",
+      "amountCents": 22500,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T02:01:00.000Z"
+    },
+    {
+      "id": "txn-0010",
+      "referenceKey": "orphan-002",
+      "amountCents": 640,
+      "currency": "GBP",
+      "occurredAt": "2026-01-01T02:19:00.000Z"
+    },
+    {
+      "id": "txn-0011",
+      "referenceKey": "acct-700",
+      "amountCents": 9950,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T02:34:00.000Z"
+    },
+    {
+      "id": "txn-0012",
+      "referenceKey": "acct-800",
+      "amountCents": 5100,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T02:50:00.000Z"
+    },
+    {
+      "id": "txn-0013",
+      "referenceKey": "acct-900",
+      "amountCents": 33333,
+      "currency": "GBP",
+      "occurredAt": "2026-01-01T03:06:00.000Z"
+    },
+    {
+      "id": "txn-0002",
+      "referenceKey": "acct-900",
+      "amountCents": 3700,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T03:21:00.000Z"
+    },
+    {
+      "id": "txn-0015",
+      "referenceKey": "acct-200",
+      "amountCents": 14200,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T03:39:00.000Z"
+    },
+    {
+      "id": "txn-0016",
+      "referenceKey": "acct-300",
+      "amountCents": 2450,
+      "currency": "GBP",
+      "occurredAt": "2026-01-01T03:53:00.000Z"
+    },
+    {
+      "id": "txn-0017",
+      "referenceKey": "orphan-003",
+      "amountCents": 780,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T04:11:00.000Z"
+    },
+    {
+      "id": "txn-0018",
+      "referenceKey": "acct-100",
+      "amountCents": 11000,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T04:26:00.000Z"
+    },
+    {
+      "id": "txn-0019",
+      "referenceKey": "acct-400",
+      "amountCents": 4400,
+      "currency": "GBP",
+      "occurredAt": "2026-01-01T04:42:00.000Z"
+    },
+    {
+      "id": "txn-0020",
+      "referenceKey": "acct-500",
+      "amountCents": 19999,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T04:57:00.000Z"
+    },
+    {
+      "id": "txn-0021",
+      "referenceKey": "acct-999",
+      "amountCents": 850,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T05:14:00.000Z"
+    },
+    {
+      "id": "txn-0022",
+      "referenceKey": "acct-600",
+      "amountCents": 27000,
+      "currency": "GBP",
+      "occurredAt": "2026-01-01T05:29:00.000Z"
+    },
+    {
+      "id": "txn-0023",
+      "referenceKey": "acct-700",
+      "amountCents": 6400,
+      "currency": "USD",
+      "occurredAt": "2026-01-01T05:47:00.000Z"
+    },
+    {
+      "id": "txn-0001",
+      "referenceKey": "acct-800",
+      "amountCents": 2300,
+      "currency": "EUR",
+      "occurredAt": "2026-01-01T06:02:00.000Z"
+    }
+  ],
+  "references": [
+    {
+      "key": "acct-100",
+      "category": "wallet",
+      "riskScore": 12,
+      "label": "Primary wallet account"
+    },
+    {
+      "key": "acct-200",
+      "category": "bank-transfer",
+      "riskScore": 8,
+      "label": "Primary bank account"
+    },
+    {
+      "key": "acct-300",
+      "category": "card",
+      "riskScore": 44,
+      "label": "Primary card account"
+    },
+    {
+      "key": "acct-100",
+      "category": "card",
+      "riskScore": 95,
+      "label": "Later duplicate of acct-100"
+    },
+    {
+      "key": "acct-400",
+      "category": "refund",
+      "riskScore": 27,
+      "label": "Refund account 400"
+    },
+    {
+      "key": "acct-500",
+      "category": "wallet",
+      "riskScore": 5,
+      "label": "Wallet account 500"
+    },
+    {
+      "key": "acct-600",
+      "category": "bank-transfer",
+      "riskScore": 63,
+      "label": "Bank account 600"
+    },
+    {
+      "key": "acct-700",
+      "category": "card",
+      "riskScore": 18,
+      "label": "Card account 700"
+    },
+    {
+      "key": "acct-200",
+      "category": "wallet",
+      "riskScore": 77,
+      "label": "Later duplicate of acct-200"
+    },
+    {
+      "key": "acct-800",
+      "category": "refund",
+      "riskScore": 31,
+      "label": "Refund account 800"
+    },
+    {
+      "key": "acct-900",
+      "category": "card",
+      "riskScore": 11,
+      "label": "Card account 900"
+    },
+    {
+      "key": "acct-100",
+      "category": "bank-transfer",
+      "riskScore": 99,
+      "label": "Third occurrence of acct-100"
+    }
+  ]
+}

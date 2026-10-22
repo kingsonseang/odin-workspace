@@ -1,0 +1,5 @@
+{
+  "serviceName": 42,
+  "port": "8080",
+  "environment": true
+}

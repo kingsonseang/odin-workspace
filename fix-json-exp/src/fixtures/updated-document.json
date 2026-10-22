@@ -1,0 +1,46 @@
+{
+  "document": {
+    "title": "Orbit Tracker",
+    "revision": 2,
+    "published": true,
+    "summary": "Updated immediately before export",
+    "tags": ["demo", "nested", "json", "updated"],
+    "emptyList": [],
+    "emptyObject": {},
+    "owner": {
+      "name": "Ada Lovelace",
+      "email": "ada@example.test",
+      "preferences": {
+        "digest": false,
+        "labels": [""]
+      }
+    },
+    "events": [
+      {
+        "id": 1,
+        "kind": "created",
+        "payload": {
+          "source": "fixture",
+          "note": ""
+        }
+      },
+      {
+        "id": 2,
+        "kind": "updated",
+        "payload": null
+      },
+      {
+        "id": 3,
+        "kind": "exported",
+        "payload": {
+          "source": "in-app-update",
+          "note": ""
+        }
+      }
+    ],
+    "metrics": {
+      "views": 12,
+      "downloads": 1
+    }
+  }
+}

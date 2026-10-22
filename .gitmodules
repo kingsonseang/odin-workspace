@@ -1,0 +1,7 @@
+[submodule "git-feat-branch"]
+	path = git-feat-branch
+	url = git@github.com:kingsonseang/git-feat-branch.git
+	branch = feature/task-priority-filters
+[submodule "traige-ci"]
+	path = traige-ci
+	url = git@github.com:kingsonseang/traige-ci.git

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown Export Preview</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #0b66c3;
+      --border: color-mix(in srgb, currentColor 18%, transparent);
+      --card: color-mix(in srgb, currentColor 4%, transparent);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0 auto;
+      max-width: 860px;
+      padding: 3rem 1.25rem 4rem;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    header { margin-bottom: 2rem; }
+    .eyebrow {
+      margin: 0 0 0.4rem;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0 0 0.75rem; font-size: clamp(2rem, 7vw, 3.25rem); line-height: 1.1; }
+    h2 { margin-top: 0; font-size: 1.15rem; }
+    p { margin: 0.5rem 0; }
+    a { color: var(--accent); }
+    code {
+      padding: 0.12rem 0.35rem;
+      border: 1px solid var(--border);
+      border-radius: 0.35rem;
+      font-size: 0.9em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      padding: 1.1rem 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      background: var(--card);
+    }
+    ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    li + li { margin-top: 0.35rem; }
+    .notice { margin-top: 1.25rem; }
+    .muted { opacity: 0.75; font-size: 0.92rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Seeded link-resolution exercise</p>
+    <h1>Markdown Export Preview</h1>
+    <p>
+      Start this page with <code>npm run preview</code>, then open the URL in Firefox.
+      All links below point at generated static HTML files. There is no router or
+      documentation-site framework.
+    </p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Root documents</h2>
+      <ul>
+        <li><a href="site/index.html">Root fixture</a></li>
+        <li><a href="site/about.html">About the project</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Nested documents</h2>
+      <ul>
+        <li><a href="site/guide/index.html">Guide index</a></li>
+        <li><a href="site/guide/setup.html">Setup</a></li>
+        <li><a href="site/guide/advanced/configuration.html">Configuration</a></li>
+        <li><a href="site/reference/api.html">API reference</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="card notice">
+    <h2>What to check</h2>
+    <p>
+      Root-level links should work. Links inside documents under
+      <code>site/guide/</code> and <code>site/reference/</code> are expected to point at
+      the wrong paths until the seeded bug in <code>src/export.ts</code> is fixed.
+    </p>
+    <p class="muted">
+      A broken nested link produces a 404 in the terminal running the preview server.
+      External HTTPS links and same-page anchors are unaffected.
+    </p>
+  </section>
+</body>
+</html>

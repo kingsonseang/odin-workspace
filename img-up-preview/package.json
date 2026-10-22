@@ -1,0 +1,42 @@
+{
+  "name": "img-up-preview",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "setup:firefox": "playwright install firefox",
+    "test:e2e": "playwright test --project=firefox",
+    "test:e2e:headed": "playwright test --project=firefox --headed",
+    "verify:firefox": "playwright test --project=firefox"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.1",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/node": "20.19.43",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "4.7.0",
+    "jsdom": "26.1.0",
+    "typescript": "5.7.3",
+    "vite": "6.4.5",
+    "vitest": "3.2.7"
+  },
+  "overrides": {
+    "vite": "6.4.5"
+  }
+}

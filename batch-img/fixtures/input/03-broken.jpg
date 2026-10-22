@@ -1,0 +1,3 @@
+This file has a .jpg extension but deliberately contains no image data.
+Sharp must fail to decode it.
+It is present so the batch workflow can be tested against a bad input.

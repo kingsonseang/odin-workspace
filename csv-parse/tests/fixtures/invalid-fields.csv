@@ -1,0 +1,4 @@
+name,email,role,notes
+Ada Lovelace,ada@example.com,admin,ok
+,missing-name@example.com,editor,
+Grace Hopper,not-an-email,wizard,

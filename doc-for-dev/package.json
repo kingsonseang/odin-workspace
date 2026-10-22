@@ -1,0 +1,30 @@
+{
+  "name": "forgeboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An internal project tracker used as a codebase onboarding exercise.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others --names api,web --prefix-colors cyan,magenta \"npm run dev -w @forgeboard/api\" \"npm run dev -w @forgeboard/web\"",
+    "dev:api": "npm run dev -w @forgeboard/api",
+    "dev:web": "npm run dev -w @forgeboard/web",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "npm run typecheck && npm run build -w @forgeboard/web",
+    "verify": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.6.3",
+    "vitest": "^4.1.12"
+  }
+}
